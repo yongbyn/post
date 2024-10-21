@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>게시글 상세</title>
+</head>
+<body>
+<h1 th:text="${post.title}">게시글 제목</h1>
+<p th:text="${post.content}">게시글 내용</p>
+<p>작성일: <span th:text="${post.createdAt}">날짜</span></p>
+<p>수정일: <span th:text="${post.updatedAt}">날짜</span></p>
+
+<a th:href="@{/posts/{id}/edit(id=${post.id})}">수정</a>
+<form th:action="@{/posts/{id}/delete(id=${post.id})}" method="post">
+    <button type="submit">삭제</button>
+</form>
+<a href="/posts">목록으로 돌아가기</a>
+</body>
+</html>
