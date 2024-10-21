@@ -1,4 +1,4 @@
-package com.example.post.post.dto;
+package com.example.post.dto;
 
 public record CreatePostRequest(
 	String title,

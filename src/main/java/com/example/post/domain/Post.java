@@ -1,4 +1,4 @@
-package com.example.post.post.domain;
+package com.example.post.domain;
 
 import java.time.LocalDateTime;
 

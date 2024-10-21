@@ -1,4 +1,4 @@
-package com.example.post.post.service;
+package com.example.post.service;
 
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;

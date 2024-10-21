@@ -1,4 +1,4 @@
-package com.example.post.post.controller;
+package com.example.post.controller;
 
 import java.util.List;
 
@@ -49,7 +49,7 @@ public class PostController {
 
 	// 게시글 수정
 	@PatchMapping("/{id}")
-	public ResponseEntity<void> updatePost(@PathVariable Long id, @RequestBody @Valid CreatePostRequest createPostRequest) {
+	public ResponseEntity<Void> updatePost(@PathVariable Long id, @RequestBody @Valid CreatePostRequest createPostRequest) {
 		postService.updatePost(id, createPostRequest);
 		return ResponseEntity.ok().build();
 	}
